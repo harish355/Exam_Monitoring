@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vertical Side Navigation Bar</title>
+	<link rel="stylesheet" href="css/nav.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper_inner">
+			<div class="vertical_wrap">
+			<div class="backdrop"></div>
+			<div class="vertical_bar">
+        <br><br><br>
+				<ul class="menu">
+					<li><a href="#">
+						<span class="icon"><i class="fas fa-file-alt"></i></span>
+						<span class="text">Courses</span>
+					</a></li>
+					<li><a href="#" class="active">
+						<span class="icon"><i class="fas fa-home"></i></span>
+						<span class="text">Dashboard</span>
+					</a></li>
+					<li><a href="#">
+						<span class="icon"><i class="fas fa-chart-pie"></i></span>
+						<span class="text">Ongoing exams</span>
+					</a></li>
+					<li><a href="#">
+						<span class="icon"><i class="fas fa-user"></i></span>
+						<span class="text">Account</span>
+					</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="main_container">
+			<div class="top_bar">
+				<div class="hamburger">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="logo">
+					Coding <span>Market</span>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+          <h1>Sev Pages</h1>
+          <h3>How do You want to Control the Bot?</h3>
+          <a class="btn btn1" href="manual.html">Manual</a>
+          <a class="btn btn2" href="autonomus.html">Autonomus</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+<script>
+	var hamburger = document.querySelector(".hamburger");
+	var wrapper  = document.querySelector(".wrapper");
+	var backdrop = document.querySelector(".backdrop");
+
+	hamburger.addEventListener("click", function(){
+		wrapper.classList.add("active");
+	})
+
+	backdrop.addEventListener("click", function(){
+		wrapper.classList.remove("active");
+	})
+</script>
+</body>
+</html>
