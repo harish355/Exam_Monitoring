@@ -1,0 +1,10 @@
+python packages:
+        eel ,
+        flask ,
+        dlib  ,
+        googleapiclient,
+        google,
+        pyautogui ,
+        numpy,
+        cv2,
+        tkinter
